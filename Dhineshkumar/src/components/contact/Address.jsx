@@ -6,28 +6,27 @@ const Address = ({ item }) => {
 
   return (
     <div
-      className="max-w-84 p-3 md:p-3.75 lg:p-6 flex xs:not-odd:my-3 rounded-[10px] bg-white  hover:scale-[1] duration-450  cursor-pointer hover:shadow-[0px_0px_37px_5px_rgba(0,_0,_0,_0.1)] shadow-gray-200 max-sm:mx-auto"
-      /* Scale effect:  */
+      className="max-w-96 p-4 md:p-5 flex items-start rounded-xl bg-[#F9FAFB] hover:bg-white transition-all duration-300 cursor-pointer hover:shadow-lg border border-transparent hover:border-gray-200 max-sm:mx-auto"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
       <div
-        className={`h-10 md:h-12 aspect-square ${
-          hover ? "bg-picto-primary" : "bg-[#EDD8FF80]"
-        } center rounded-[4px]`}
+        className={`h-12 md:h-14 aspect-square ${
+          hover ? "bg-picto-primary" : "bg-[#EDD8FF]"
+        } center rounded-lg transition-all duration-300 shrink-0`}
       >
         <FontAwesomeIcon
           icon={item?.icon}
-          className={`text-lg md:text-xl ${
+          className={`text-xl md:text-2xl ${
             hover ? "text-white" : "text-picto-primary"
-          }`}
+          } transition-all duration-300`}
         />
       </div>
-      <div className="ms-3.25">
-        <p className="text-[12px] md:text-[14px] text-[#424E60] font-normal">
-          {item?.title}:
+      <div className="ml-4 flex-1">
+        <p className="text-xs md:text-sm text-soft-dark font-medium mb-1">
+          {item?.title}
         </p>
-        <p className="text-[14px] md:text-[16px] text-[#132238] font-medium">
+        <p className="text-sm md:text-base text-[#132238] font-semibold wrap-break-word">
           {item?.description}
         </p>
       </div>

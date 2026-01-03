@@ -13,17 +13,17 @@ const telegramSVG = (
 );
 
 const commonClass =
-  "input input-lg border-0 border-b-2 focus:outline-none focus:placeholder:text-picto-primary placeholder:text-[15px] md:placeholder:text-lg focus:border-picto-primary border-[#E6E8EB] w-full rounded-none px-0";
+  "input input-lg border-0 border-b-2 focus:outline-none focus:placeholder:text-picto-primary placeholder:text-sm md:placeholder:text-base placeholder:font-normal focus:border-picto-primary border-[#E6E8EB] bg-transparent w-full rounded-none px-0 py-3 text-base transition-all duration-300";
 
 const Form = () => {
   return (
-    <div>
-      <p className="text-[12px] xs:text-[14px] max-lg:text-center sm:text-lg font-normal text-soft-dark">
+    <div className="h-full flex flex-col">
+      <p className="text-sm xs:text-base max-lg:text-center sm:text-lg font-normal text-soft-dark leading-relaxed">
         I'm always open to discussing product design work or partnership
         opportunities.
       </p>
-      <div className="mx-2">
-        <form className="flex flex-col gap-4 mt-4">
+      <div className="mt-6 flex-1">
+        <form className="flex flex-col gap-6">
           <input
             type="text"
             placeholder="Name*"
@@ -43,30 +43,30 @@ const Form = () => {
             required
           />
 
-          <div className="flex max-xs:flex-col max-xs:gap-4">
+          <div className="flex max-xs:flex-col xs:gap-6 max-xs:gap-6">
             <input
               type="text"
               placeholder="Budget*"
-              className={`${commonClass} xs:w-[50%] me-5`}
+              className={`${commonClass} xs:flex-1`}
               required
             />
             <input
               type="text"
               placeholder="Subject*"
-              className={`${commonClass}`}
+              className={`${commonClass} xs:flex-1`}
               required
             />
           </div>
 
-          <input
-            type="text"
+          <textarea
             placeholder="Message*"
-            className={`${commonClass}`}
+            className={`${commonClass} min-h-15 resize-none`}
+            rows="3"
             required
           />
           <button
             type="submit"
-            className="btn gap-3 max-lg:mx-auto btn-primary rounded-sm mt-5 text-[13px] md:text-[16px] w-fit font-semibold lg:mt-12.5 p-2 md:px-4"
+            className="btn btn-lg gap-3 max-lg:mx-auto btn-primary rounded-xl mt-4 text-base md:text-lg w-fit font-semibold lg:mt-8 px-8 py-3 hover:scale-105 transition-transform duration-300 flex items-center"
           >
             Submit {telegramSVG}
           </button>

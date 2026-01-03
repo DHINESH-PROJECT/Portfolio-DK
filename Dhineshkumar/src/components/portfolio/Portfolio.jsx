@@ -55,10 +55,10 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-      <div className="text-center">
+      <div className="text-center mt-12 md:mt-16 lg:mt-20">
         <a
           href="https://github.com/DHINESH-PROJECT"
-          className="btn btn-primary py-3 px-6 mt-12.5 text-center text-[16px] font-semibold"
+          className="btn btn-primary rounded-xl py-3 px-6 text-center text-[16px] font-semibold hover:scale-105 transition-transform duration-300"
         >
           More Project
         </a>

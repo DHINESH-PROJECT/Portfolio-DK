@@ -30,20 +30,19 @@ const Introduction = () => {
       <div className="w-full flex flex-col justify-between max-lg:text-center">
         <div className="pt-13 me-31.5 w-full lg:w-auto transition-all duration-500">
           <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full">
-            Hello, I’m
+            Hello, I'm
             <span className="text-nowrap shrink-0 inline-block w-full">
               Dhinesh Kumar
             </span>
           </p>
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
             I'm a Full Stack Web Developer and <span className="bg-highlight">UI/UX Designer</span>{" "}
-            and <span className="bg-highlight"> Developer</span> based in
-            Chennai, Tamil Nadu, India. I strives to build immersive and beautiful web
+            based in Chennai, Tamil Nadu, India. I strives to build immersive and beautiful web
             applications through carefully crafted code and user-centric design.
           </p>
           <p className="text-center lg:text-start">
             <a
-              className="btn-primary btn btn-xs xxs:btn-lg text-white"
+              className="mt-5 md:mt-12.5 btn btn-primary text-white w-fit md:py-3 md:px-6 text-[12px] sm:text-[16px] font-semibold max-md:mx-auto max-md:mb-5"
               href="mailto:dhineshkumar190304@gmail.com"
             >
               Say Hello!

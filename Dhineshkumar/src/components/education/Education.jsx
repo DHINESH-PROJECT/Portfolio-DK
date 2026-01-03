@@ -24,15 +24,17 @@ const educationData = [
 const Education = () => {
   return (
     <div
-      className="content px-2 py-10 md:py-15 lg:py-25 xl:py-35 max-xxl:px-4"
+      className="content mt-10 md:mt-15 xl:mt-25 mb-10 md:mb-25 max-xxl:p-2"
       id="education"
     >
-      <div className="text-center mb-12">
-        <p className="section-title">Education Journey</p>
-        <p className="mt-6 text-sm md:text-lg font-normal text-gray-500 max-w-3xl mx-auto">
-          Building a strong foundation in computer science through dedicated learning
-          and academic excellence, constantly evolving with technology.
-        </p>
+      <div className="xl:mb-17.5 mb-5">
+        <div className="max-sm:px-2 text-center mx-auto max-w-144.25">
+          <p className="section-title">Education Journey</p>
+          <p className="font-normal text-[18px] max-sm:text-[14px] pt-6 text-gray-400">
+            Building a strong foundation in computer science through dedicated learning
+            and academic excellence, constantly evolving with technology.
+          </p>
+        </div>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6 lg:gap-8 xl:gap-10 mt-10">

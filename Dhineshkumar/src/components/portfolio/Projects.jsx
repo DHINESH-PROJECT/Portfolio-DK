@@ -18,14 +18,12 @@ const Projects = ({ data }) => {
         </p>
         <a
           href={data?.link}
-          className="btn hover:border-picto-primary hover:text-picto-primary bg-white text-sm xs:text-[16px] font-semibold hover:gap-3 xs:hover:gap-4 transition-all duration-300 mt-5 xs:py-5.75 px-6 max-sm:w-full"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary rounded-xl py-2 px-5 text-sm font-semibold hover:scale-105 transition-transform duration-300"
         >
-          Case Study
-          <span className="ms-1 xs:ms-3">
-            <FontAwesomeIcon icon={faArrowRight} size="l" className="" />
-          </span>
+          View Project
         </a>
-        {/* </p> */}
       </div>
     </div>
   );

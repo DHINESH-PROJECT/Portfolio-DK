@@ -1,4 +1,4 @@
-import logo from "../../../assets/logo.png";
+import logo from "/logo.png";
 
 /* Footer nabLinks */
 const navItems = [
@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="flex max-md:flex-col justify-between mx-0 items-center h-full w-full text-neutral-200">
         <a href="#" className="flex items-center border-0">
           <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
-          <p className="text-3xl sm:text-[32px] my-auto ms-[12px] font-semibold">
+          <p className="text-3xl sm:text-[32px] my-auto ms-3 font-semibold">
             Dhinesh Kumar
           </p>
         </a>
